@@ -96,8 +96,8 @@ public class Word {
         String w = "";
         while(scan.hasNextLine())
         {
-            w = scan.nextLine().toUpperCase().trim();
-            if(w.equals(word.trim()))
+            w = scan.nextLine().trim();
+            if(w.equalsIgnoreCase(word.trim()))
             {
                 return true;
             }
